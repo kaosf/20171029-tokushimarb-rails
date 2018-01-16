@@ -4,6 +4,8 @@ services:
     image: postgres:9.6
   rails:
     image: ruby:2.4.2
+    # environment:
+    #   DATABASE_URL: postgres://postgres:@db:5432/db
     environment:
       - DATABASE_URL=postgres://postgres:@db:5432/db
     volumes:
